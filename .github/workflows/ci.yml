@@ -84,7 +84,7 @@ jobs:
           - -A x64 # Visual Studio (latest IDE)
           - -G "Unix Makefiles"
           - -G Xcode
-        configuration: [Debug] #[Debug, Release]
+        configuration: [Debug, Release]
         include:
           - cmake-generator: -A Win32
             platform: Windows
