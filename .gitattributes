@@ -1,0 +1,7 @@
+* text=auto
+
+[Cc][Mm]ake[Ll]ists.txt text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
