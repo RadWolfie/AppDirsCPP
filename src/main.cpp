@@ -149,7 +149,9 @@ _CXTSTR user_data_dir(
 #endif
 
 	if (full_path.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_path;
 	}
 
@@ -158,7 +160,9 @@ _CXTSTR user_data_dir(
 		full_path.append(append_path_str);
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_path;
 }
 
@@ -190,7 +194,9 @@ std::vector<_CXTSTR> site_data_dir(
 	}
 
 	if (full_paths.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_paths;
 	}
 
@@ -200,7 +206,9 @@ std::vector<_CXTSTR> site_data_dir(
 #endif
 
 	if (full_paths.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_paths;
 	}
 
@@ -211,7 +219,9 @@ std::vector<_CXTSTR> site_data_dir(
 		}
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_paths;
 }
 
@@ -240,7 +250,9 @@ _CXTSTR user_config_dir(
 #endif
 #if !defined(_WIN32)
 	if (full_path.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_path;
 	}
 
@@ -249,7 +261,9 @@ _CXTSTR user_config_dir(
 		full_path.append(append_path_str);
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_path;
 #endif
 }
@@ -287,7 +301,9 @@ std::vector<_CXTSTR> site_config_dir(
 	}
 
 	if (full_paths.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_paths;
 	}
 
@@ -302,7 +318,9 @@ std::vector<_CXTSTR> site_config_dir(
 		}
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_paths;
 #endif
 }
@@ -331,7 +349,9 @@ _CXTSTR user_cache_dir(
 #endif
 
 	if (full_path.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_path;
 	}
 
@@ -340,7 +360,9 @@ _CXTSTR user_cache_dir(
 		full_path.append(append_path_str);
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_path;
 }
 
@@ -366,7 +388,9 @@ _CXTSTR user_state_dir(
 	}
 
 	if (full_path.empty()) {
-		*error = errno;
+		if (error) {
+			*error = errno;
+		}
 		return full_path;
 	}
 
@@ -375,7 +399,9 @@ _CXTSTR user_state_dir(
 		full_path.append(append_path_str);
 	}
 
-	*error = 0;
+	if (error) {
+		*error = 0;
+	}
 	return full_path;
 #endif
 }
@@ -401,7 +427,9 @@ _CXTSTR user_log_dir(
 		full_path.append(append_path_str);
 	}
 	if (error_local) {
-		*error = error_local;
+		if (error) {
+			*error = error_local;
+		}
 		return full_path;
 	}
 #endif
@@ -412,6 +440,8 @@ _CXTSTR user_log_dir(
 	}
 #endif
 
-	*error = error_local;
+	if (error) {
+		*error = error_local;
+	}
 	return full_path;
 }

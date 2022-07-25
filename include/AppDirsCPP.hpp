@@ -51,11 +51,11 @@
 /// </param>
 /// <returns>Return full path to the user-specific data dir for this application. Use free() to deallocate full path memory.</returns>
 _CXTSTR user_data_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool roaming,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool roaming = false,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -96,11 +96,11 @@ _CXTSTR user_data_dir(
 /// </param>
 /// <returns>Return full path to the user-shared data dir for this application. Use free() to deallocate full path memory.</returns>
 std::vector<_CXTSTR> site_data_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool multipath,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool multipath = false,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -138,11 +138,11 @@ std::vector<_CXTSTR> site_data_dir(
 /// </param>
 /// <returns>Return full path to the user-specific config dir for this application. Use free() to deallocate full path memory.</returns>
 _CXTSTR user_config_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool roaming,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool roaming = false,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -183,11 +183,11 @@ _CXTSTR user_config_dir(
 /// </param>
 /// <returns>Return full path to the user-shared data dir for this application. Use free() to deallocate full path memory.</returns>
 std::vector<_CXTSTR> site_config_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool multipath,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool multipath = false,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -230,11 +230,11 @@ std::vector<_CXTSTR> site_config_dir(
 /// </param>
 /// <returns>Return full path to the user-specific cache dir for this application. Use free() to deallocate full path memory.</returns>
 _CXTSTR user_cache_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool opinion,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool opinion = true,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -275,11 +275,11 @@ _CXTSTR user_cache_dir(
 /// </param>
 /// <returns>Return full path to the user-specific state dir for this application. Use free() to deallocate full path memory.</returns>
 _CXTSTR user_state_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool roaming,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool roaming = false,
+    int* error = nullptr);
 
 
 /// <summary>
@@ -321,8 +321,8 @@ _CXTSTR user_state_dir(
 /// </param>
 /// <returns>Return full path to the user-specific log dir for this application.  Use free() to deallocate full path memory.</returns>
 _CXTSTR user_log_dir(
-    const _CXTSTR* appname,
-    const _CXTSTR* appauthor,
-    const _CXTSTR* version,
-    const bool opinion,
-    int* error);
+    const _CXTSTR* appname = nullptr,
+    const _CXTSTR* appauthor = nullptr,
+    const _CXTSTR* version = nullptr,
+    const bool opinion = true,
+    int* error = nullptr);
