@@ -33,8 +33,7 @@
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -79,8 +78,7 @@ _CXTSTR user_data_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -122,8 +120,7 @@ std::vector<_CXTSTR> site_data_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -168,8 +165,7 @@ _CXTSTR user_config_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -218,8 +214,7 @@ std::vector<_CXTSTR> site_config_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -261,8 +256,7 @@ _CXTSTR user_cache_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
@@ -311,8 +305,7 @@ _CXTSTR user_state_dir(
 /// </param>
 /// <param name="appauthor"> (only used on Windows) is the name of the
 /// <para/>&#160;&#160;&#160;&#160;appauthor or distributing body for this application.Typically
-/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.This falls back to appname.You may
-/// <para/>&#160;&#160;&#160;&#160;pass false to disable it.
+/// <para/>&#160;&#160;&#160;&#160;it is the owning company name.
 /// </param>
 /// <param name="version"> is an optional version path element to append to the
 /// <para/>&#160;&#160;&#160;&#160;path.You might want to use this if you want multiple versions
