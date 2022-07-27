@@ -1,7 +1,7 @@
 // This is an open source non-commercial project. Dear PVS-Studio, please check it.
 // PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
 // SPDX-FileCopyrightText: 2010 ActiveState Software Inc.
-// SPDX-FileCopyrightText: 2022 AppDirsC contributors
+// SPDX-FileCopyrightText: 2022 AppDirsCPP contributors
 // SPDX-License-Identifier: MIT
 
 #include <AppDirsCPP.hpp>
