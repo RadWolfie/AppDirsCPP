@@ -32,5 +32,6 @@ foreach(UnitTestProject IN LISTS unit_test_projects)
     CXX_STANDARD_REQUIRED ON
     FOLDER AppDirsCPP/UnitTests
   )
-  add_test(${UnitTestProject} ${UnitTestProject})
+  # NOTE: CMAKE_CROSSCOMPILING_EMULATOR is require if not using current platform system.
+  add_test(NAME ${UnitTestProject} COMMAND ${CMAKE_CROSSCOMPILING_EMULATOR} $<TARGET_FILE:${UnitTestProject}>)
 endforeach()
